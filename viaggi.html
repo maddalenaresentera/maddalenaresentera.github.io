@@ -4,28 +4,51 @@
 <title>Offerte Viaggi</title>
 <link rel="stylesheet" href="Foglio3.css">
 <style>
+header {
+     background-color: #191970;
+     color: #fff;
+     padding: 20px;
+     text-align: center; 
+     width: 100%;
+}
+     a { 
+    
+  color: white; 
+     }
+    /* Navigation */
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #191970;
-}
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #191970;
+    width: 100%;
+  }
+  
+  li {
+    float: right;
+  }
 
-li {
-  float: right;
-}
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #00008B;
+  }
+  
+  .active {
+    background-color: #00008B;
+  }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #191970;
+section {
+  padding: 20px;
+  margin-bottom: 20px;
 }
 </style>
 </head>
