@@ -24,7 +24,7 @@ body {
 a {
      color: white;
 }
-ul {
+ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -33,11 +33,11 @@ ul {
     width: 100%;
   }
   
-  li {
+  li.nav {
     float: right;
   }
 
-  li a {
+  li.nav a {
     display: block;
     color: white;
     text-align: center;
@@ -46,7 +46,7 @@ ul {
     cursor: pointer;
   }
   
-  li a:hover:not(.active) {
+  li.nav a:hover:not(.active) {
     background-color: #00008B;
   }
   
@@ -67,10 +67,10 @@ ul {
 <body>
 <header>
      <h1>MONDO VIAGGI</h1>
-     <ul>
-          <li><a class="#active" href="contatti.html">Contatti</a></li>
-          <li><a href="chisiamo.html">Chi Siamo</a></li>
-          <li><a href="index.html">Home</a></li>
+     <ul class="nav">
+          <li class="nav"><a class="#active" href="contatti.html">Contatti</a></li>
+          <li class="nav"><a href="chisiamo.html">Chi Siamo</a></li>
+          <li class="nav"><a href="index.html">Home</a></li>
           </ul>
 </br>
 </header>
