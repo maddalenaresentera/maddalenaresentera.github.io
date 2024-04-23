@@ -60,17 +60,19 @@ ul.nav {
  justify-content: center;
 }
  .left-image {
-        float: left;
-  margin: 20px auto;
+        float: left; 
+        margin-right: 20px;
  }
-  .container {
-        position: relative; 
-    }
+ 
  .right-image {
-        position: absolute;
-        right: 0; 
-        top: 0;
+        float: right; 
+        margin-left: 20px;
  }
+  .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+  }
  section {
       padding: 20px;
     }
@@ -134,9 +136,10 @@ ul.nav {
      </li>
      </ul>   
 
- <div class=".left-image"> <img src="roma2.jpg" alt="Descrizione dell'immagine"> </div>
- <div class="container">
- <img src="0.jpg" alt="Descrizione dell'immagine"class="right-image"> </div>
+ <img src="roma2.jpg" alt="Descrizione dell'immagine" class="left-image"> 
+ <img src="0.jpg" alt="Descrizione dell'immagine"class="right-image"> 
+  <div class="clearfix"></div>
+
  </section>
   <head>
   <footer>
